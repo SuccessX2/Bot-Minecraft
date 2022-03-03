@@ -9,7 +9,7 @@ from mcstatus import MinecraftBedrockServer,MinecraftServer
 
 
 
-client = commands.Bot(command_prefix="!")
+client = commands.Bot(command_prefix="")
 client.remove_command("help")
 
 @client.command()
@@ -90,4 +90,4 @@ async def udp(message, ip, port=None):
                 await message.send(embed=embed, delete_after=10)
                 await message.message.delete()
 
-client.run("OTE2NDk1NTgxNzQ3MjQwOTgw.Yaq_Bg.We7Y3FTyBmAmZn6FSb6QUU1n2hw", reconnect=True)
+client.run("", reconnect=True)
